@@ -1,9 +1,11 @@
 import realImg from "./realImg";
 import hideText from "./hideText";
+import formatMoney from "./formatText";
 
 const directives = {
   realImg,
   hideText,
+  formatMoney,
 };
 
 export default {

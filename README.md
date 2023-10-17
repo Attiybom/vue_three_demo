@@ -1,19 +1,6 @@
-# 05_component_demo
+根据 arg 个数来将字符串拆分成数组
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+比如 arg = 4  时
+123456789 会被拆分成 ['123', '4567', '89']
+45678 会被拆分成 [456', '78']
+请用js实现
