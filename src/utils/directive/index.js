@@ -1,11 +1,13 @@
 import realImg from "./realImg";
 import hideText from "./hideText";
 import formatMoney from "./formatText";
+import ellipsis from "./ellipsis";
 
 const directives = {
   realImg,
   hideText,
   formatMoney,
+  ellipsis,
 };
 
 export default {
