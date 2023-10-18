@@ -22,10 +22,19 @@
       <!-- 123_456_789 -->
       <!-- <div v-format-text.money:4="','">123456789</div> -->
       <!-- 1234,4567,89 -->
-      <div v-formatMoney="'_'">123456789</div>
+      <!-- <div v-formatMoney="'_'">123456789</div> -->
       <!-- 1234_4567_89 -->
       <!-- <div v-format-text>abcdefghi</div> -->
       <!-- abc,def,ghi- -->
+    </div>
+
+    <div class="ellipsis">
+      <div v-ellipsis:220>
+        默认通过样式实现文字省略通过样式实现文字省略通过样式实现文字省略通过样式实现文字省略
+      </div>
+      <div v-ellipsis:10="'js'">
+        通过js实现文字省略通过js实现文字省略通过js实现文字省略通过js实现文字省略通过js实现文字省略
+      </div>
     </div>
   </div>
 </template>
