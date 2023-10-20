@@ -8,7 +8,6 @@ const ellipsis = {
       //elementId：元素id，length：需保留字符串长度
       const text = element;
       let result = "";
-      console.log("length", text.innerText.length);
       if (text.innerText.length > length) {
         result = text.innerText.substr(0, length) + "...";
       } else {

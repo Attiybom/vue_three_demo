@@ -2,12 +2,14 @@ import realImg from "./realImg";
 import hideText from "./hideText";
 import formatMoney from "./formatText";
 import ellipsis from "./ellipsis";
+import debounce from "./debounce";
 
 const directives = {
   realImg,
   hideText,
   formatMoney,
   ellipsis,
+  debounce,
 };
 
 export default {
