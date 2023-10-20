@@ -1,4 +1,10 @@
-<script setup></script>
+<script setup>
+
+function consoleFn(e) {
+  console.log('debounceTestFn', e.target.value)
+}
+
+</script>
 
 <template>
   <div class="directiveContainer">
@@ -28,13 +34,18 @@
       <!-- abc,def,ghi- -->
     </div>
 
-    <div class="ellipsis">
+    <!-- <div class="ellipsis">
       <div v-ellipsis:220>
         默认通过样式实现文字省略通过样式实现文字省略通过样式实现文字省略通过样式实现文字省略
       </div>
       <div v-ellipsis:10="'js'">
         通过js实现文字省略通过js实现文字省略通过js实现文字省略通过js实现文字省略通过js实现文字省略
       </div>
+    </div> -->
+
+
+    <div class="debounceContainer">
+      <input type="text" v-debounce:500="consoleFn">
     </div>
   </div>
 </template>
