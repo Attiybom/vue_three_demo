@@ -10,7 +10,6 @@ function debounceFn(fn, delay = 300) {
 
 const debounce = {
   mounted(el, binding) {
-    console.log("debounce-binding", binding);
     if (typeof binding.value !== "function") {
       console.warn("v-debounce 参数必须是函数");
       return;
