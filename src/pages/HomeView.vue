@@ -2,6 +2,8 @@
 import { optionsA, optionsB } from "@/data/cascaderData";
 import { onMounted, ref } from "vue";
 
+import ParentComponent from "@/components/ParentCpn.vue";
+
 const options = ref([]);
 const cascaderValue = ref([])
 const lastSelectedLength = ref(0)
@@ -57,6 +59,10 @@ const handleChange = () => {
       <router-link class="routerLink" to="edit">编辑页</router-link>
       <router-link class="routerLink" to="test">测试页</router-link>
       <router-link class="routerLink" to="directive">自定义指令测试页</router-link>
+      <router-link class="routerLink" to="temp">临时页</router-link>
+    </div>
+    <div>
+      <ParentComponent />
     </div>
   </div>
 </template>
