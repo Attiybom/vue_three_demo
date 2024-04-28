@@ -36,6 +36,16 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import("../pages/TempDemo.vue"),
   },
+  {
+    path: "/tagDemo",
+    name: "tagDemo",
+    component: () => import("../pages/TagDemo.vue"),
+  },
+  {
+    path: "/tablePage",
+    name: "tablePage",
+    component: () => import("../pages/TablePage.vue"),
+  }
 ];
 
 export const HOME_PATH = "/";
